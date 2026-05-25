@@ -330,68 +330,65 @@
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
         }
-		/* ====== تحسين الموبايل فقط ====== */
-@media (max-width: 768px) {
+		@media (max-width: 768px) {
 
-    body {
-        overflow: auto;
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
+    /* شاشة الكارت نفسها تبقى Full Screen */
+    .main-content-area {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+    }
+
+    /* الكارت نفسه ياخد الشاشة كلها */
+    .greeting-card-luxury {
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        border-radius: 0;
+        padding: 20px 15px;
+        justify-content: center;
+    }
+
+    /* البوابة برضو full screen */
+    #single-gate {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+
+    /* تصغير العناصر بس */
     .gate-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .gate-desc {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .luxury-btn {
         font-size: 1rem;
-        padding: 12px 25px;
-        width: 90%;
-    }
-
-    .gate-logo {
-        width: 120px;
+        padding: 12px 20px;
     }
 
     .inner-logo {
         width: 110px;
     }
 
-    .main-headline {
-        font-size: 1.8rem;
-    }
-
-    .sub-headline {
-        font-size: 1.2rem;
-    }
-
     .message-body {
         font-size: 1rem;
         line-height: 1.7;
-        padding: 0 10px;
     }
 
     .footer-note {
         font-size: 1.2rem;
-    }
-
-    .greeting-card-luxury {
-        padding: 20px 15px;
-        width: 95%;
-        border-radius: 15px;
-    }
-
-    #audio-widget {
-        width: 45px;
-        height: 45px;
-        bottom: 15px;
-        left: 15px;
-    }
-
-    .sheep {
-        font-size: 18px;
     }
 }
     </style>
