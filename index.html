@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تهنئة عيد الأضحى المبارك - أسرة القطاع المالي</title>
+    <title>تهنئة عيد الأضحى المبارك</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -340,31 +340,18 @@
         overflow-x: hidden;
     }
 
-    /* شاشة الكارت نفسها تبقى Full Screen */
-    .main-content-area {
-        width: 100vw;
-        height: 100vh;
-        padding: 0;
-    }
-
-    /* الكارت نفسه ياخد الشاشة كلها */
-    .greeting-card-luxury {
-        width: 100vw;
-        height: 100vh;
-        max-width: 100%;
-        border-radius: 0;
-        padding: 20px 15px;
-        justify-content: center;
-    }
-
-    /* البوابة برضو full screen */
+    /* ===== البوابة ===== */
     #single-gate {
         width: 100vw;
         height: 100vh;
         border: none;
+        padding: 0;
     }
 
-    /* تصغير العناصر بس */
+    .gate-content {
+        padding: 10px;
+    }
+
     .gate-title {
         font-size: 1.6rem;
     }
@@ -373,22 +360,58 @@
         font-size: 2rem;
     }
 
+    .gate-logo {
+        width: 100px;
+    }
+
     .luxury-btn {
         font-size: 1rem;
-        padding: 12px 20px;
+        padding: 12px 18px;
+        width: 90%;
+    }
+
+    /* ===== الشاشة بعد الدخول ===== */
+    .main-content-area {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .greeting-card-luxury {
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        border-radius: 0;
+        padding: 15px;
+        justify-content: center;
     }
 
     .inner-logo {
-        width: 110px;
+        width: 100px;
+    }
+
+    .main-headline {
+        font-size: 1.8rem;
+    }
+
+    .sub-headline {
+        font-size: 1.2rem;
     }
 
     .message-body {
         font-size: 1rem;
         line-height: 1.7;
+        padding: 0 5px;
     }
 
     .footer-note {
         font-size: 1.2rem;
+    }
+
+    #audio-widget {
+        width: 45px;
+        height: 45px;
+        bottom: 12px;
+        left: 12px;
     }
 }
     </style>
